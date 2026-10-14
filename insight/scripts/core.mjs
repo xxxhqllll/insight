@@ -14,7 +14,7 @@ export function checkConfig(env=process.env,now=dayKey()){
  if(now>policy.validUntil)throw new Error('무료 모델 정책 확인 기간이 만료되었습니다. 공식 요금표를 다시 확인하고 policy.json을 갱신하세요.');
  return env.GEMINI_MODEL;
 }
-export async function request(url,options={}){const r=await fetch(url,{...options,signal:AbortSignal.timeout(45000)});if(!r.ok)throw Object.assign(new Error(r.status===429?'무료 할당량 또는 호출 속도 한도를 초과했습니다. 오늘은 자동 중지합니다.':r.status===401||r.status===403?'API 키 또는 API 사용 권한을 확인하세요.':`외부 서비스 응답 오류 (${r.status}). 자동 재시도하지 않습니다.`),{status:r.status});return r;}
+export async function request(url,options={}){const service=String(url).includes('generativelanguage.googleapis.com')?'Gemini':'외부 서비스';const r=await fetch(url,{...options,signal:AbortSignal.timeout(45000)});if(!r.ok)throw Object.assign(new Error(r.status===429?service+' 무료 할당량 또는 호출 속도 한도를 초과했습니다. 오늘은 자동 중지합니다.':r.status===401||r.status===403?'API 키 또는 API 사용 권한을 확인하세요.':`외부 서비스 응답 오류 (${r.status}). 자동 재시도하지 않습니다.`),{status:r.status});return r;}
 export async function gemini(prompt,{ledger,kind='generationCalls',json=true,maxTokens=7000}={}){
  const model=checkConfig();reserve(ledger,kind,policy.limits[kind]);
  try{const r=await request(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,{method:'POST',headers:{'Content-Type':'application/json','x-goog-api-key':process.env.GEMINI_API_KEY},body:JSON.stringify({contents:[{role:'user',parts:[{text:prompt}]}],generationConfig:{maxOutputTokens:maxTokens,temperature:json?0.25:0.6,...(json?{responseMimeType:'application/json'}:{})}})});
