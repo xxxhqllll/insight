@@ -1,7 +1,7 @@
 {
-  "state": "skipped",
-  "message": "무료 할당량 또는 호출 속도 한도를 초과했습니다. 오늘은 자동 중지합니다.",
-  "lastAttempt": "2026-10-14T05:46:53.738Z",
+  "state": "reserved",
+  "message": "오늘의 생성 시도를 예약했습니다. 중단되면 자동 재시도하지 않습니다.",
+  "lastAttempt": "2026-10-14T22:26:07.430Z",
   "lastPublished": null,
   "model": "gemini-3.5-flash-lite"
 }
