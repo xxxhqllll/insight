@@ -1,1 +1,7 @@
-{"state":"not_configured","message":"샘플 3편을 읽을 수 있어요. 자동 발행은 GitHub Secrets 설정 후 시작됩니다.","lastAttempt":null,"lastPublished":null,"model":null}
+{
+  "state": "reserved",
+  "message": "오늘의 생성 시도를 예약했습니다. 중단되면 자동 재시도하지 않습니다.",
+  "lastAttempt": "2026-10-14T05:46:52.357Z",
+  "lastPublished": null,
+  "model": null
+}
