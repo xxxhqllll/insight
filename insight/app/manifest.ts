@@ -16,8 +16,8 @@ export default function manifest(): MetadataRoute.Manifest {
     background_color: '#F8F7F4',
     theme_color: '#171A18',
     icons: [
-      { src: basePath + '/icons/brain-i-192-v1.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
-      { src: basePath + '/icons/brain-i-512-v1.png', sizes: '512x512', type: 'image/png', purpose: 'any' }
+      { src: basePath + '/icons/book-philosophy-192-v2.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+      { src: basePath + '/icons/book-philosophy-512-v2.png', sizes: '512x512', type: 'image/png', purpose: 'any' }
     ]
   };
 }
