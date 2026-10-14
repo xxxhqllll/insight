@@ -1,7 +1,7 @@
 {
-  "state": "reserved",
-  "message": "오늘의 생성 시도를 예약했습니다. 중단되면 자동 재시도하지 않습니다.",
-  "lastAttempt": "2026-10-14T22:26:07.430Z",
+  "state": "skipped",
+  "message": "자료가 확실한 도서를 선정하지 못했습니다.",
+  "lastAttempt": "2026-10-14T22:26:10.277Z",
   "lastPublished": null,
   "model": "gemini-3.5-flash-lite"
 }

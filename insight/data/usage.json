@@ -4,6 +4,8 @@
     "bookSearches": 1
   },
   "2026-10-15": {
-    "generationAttempts": 1
+    "generationAttempts": 1,
+    "bookSearches": 2,
+    "generationCalls": 1
   }
 }
