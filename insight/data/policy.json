@@ -1,0 +1,1 @@
+{"checkedAt":"2026-10-14","validUntil":"2026-11-13","allowedModels":["gemini-3.5-flash-lite","gemini-3.8-flash"],"pricingUrl":"https://ai.google.dev/gemini-api/docs/pricing","limits":{"generationAttempts":1,"generationCalls":3,"discussionCalls":8,"bookSearches":5,"sourceFetches":3},"note":"앱 자체 상한이며 공급자의 무료 할당량이 아님. 무료 정책과 결제 미연결 상태를 직접 확인해야 함."}
