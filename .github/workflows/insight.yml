@@ -1,0 +1,102 @@
+name: INSIGHT — generate and publish
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+    inputs:
+      generate:
+        description: '오늘의 아티클 생성 시도'
+        required: true
+        default: false
+        type: boolean
+
+concurrency:
+  group: insight-publication
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  publish:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    defaults:
+      run:
+        working-directory: insight
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - run: npm ci
+
+      - name: Reserve daily generation
+        id: reserve
+        if: (github.event_name == 'schedule' && vars.ENABLE_AUTO_GENERATION == 'true') || (github.event_name == 'workflow_dispatch' && inputs.generate)
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          FREE_TIER_CONFIRMED: ${{ vars.FREE_TIER_CONFIRMED }}
+        run: |
+          node scripts/generate.mjs --reserve
+          git config user.name 'insight-bot'
+          git config user.email 'insight-bot@users.noreply.github.com'
+          git add data/usage.json data/status.json
+          git commit -m 'Reserve daily generation attempt'
+          git push origin HEAD:main
+
+      - name: Generate article
+        if: steps.reserve.outcome == 'success'
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          FREE_TIER_CONFIRMED: ${{ vars.FREE_TIER_CONFIRMED }}
+          GOOGLE_BOOKS_API_KEY: ${{ secrets.GOOGLE_BOOKS_API_KEY }}
+        run: node scripts/generate.mjs --reserved
+
+      - name: Save publication result
+        if: always() && steps.reserve.outcome != 'skipped'
+        run: |
+          git config user.name 'insight-bot'
+          git config user.email 'insight-bot@users.noreply.github.com'
+          git add data/articles.json data/status.json data/usage.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update INSIGHT publication status'
+            git push origin HEAD:main
+          fi
+
+      - run: npm test
+
+      - uses: actions/configure-pages@v5
+        id: pages
+
+      - run: npm run build
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: insight/out
+          retention-days: 1
+
+      - uses: actions/deploy-pages@v4
+        id: deployment
