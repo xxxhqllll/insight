@@ -1,8 +1,9 @@
 {
-  "state": "reserved",
-  "message": "하루 1편 뉴스 칼럼 생성을 예약했습니다.",
-  "lastAttempt": "2026-10-15T05:54:28.720Z",
-  "lastPublished": null,
+  "state": "published",
+  "pipeline": "news-v1",
+  "lastAttempt": "2026-10-15T05:54:35.798Z",
+  "lastPublished": "2026-10-15",
   "model": "gemini-3.5-flash-lite",
-  "pipeline": "news-v1"
+  "message": "원문·근거 검증을 통과한 해외 칼럼 1편을 발행했습니다.",
+  "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/fires-arrive-in-the-amazon-rainforest/"
 }

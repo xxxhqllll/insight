@@ -6,7 +6,9 @@
   "2026-10-15": {
     "generationAttempts": 1,
     "bookSearches": 2,
-    "generationCalls": 1,
-    "newsMigration": 1
+    "generationCalls": 3,
+    "newsMigration": 1,
+    "newsFeedFetches": 3,
+    "sourceFetches": 2
   }
 }
