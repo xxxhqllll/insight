@@ -1,7 +1,8 @@
 {
-  "state": "skipped",
-  "message": "자료가 확실한 도서를 선정하지 못했습니다.",
-  "lastAttempt": "2026-10-14T22:26:10.277Z",
+  "state": "reserved",
+  "message": "하루 1편 뉴스 칼럼 생성을 예약했습니다.",
+  "lastAttempt": "2026-10-15T05:54:28.720Z",
   "lastPublished": null,
-  "model": "gemini-3.5-flash-lite"
+  "model": "gemini-3.5-flash-lite",
+  "pipeline": "news-v1"
 }
