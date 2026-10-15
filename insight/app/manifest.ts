@@ -6,9 +6,9 @@ export default function manifest(): MetadataRoute.Manifest {
   const basePath = process.env.BASE_PATH || '';
   return {
     id: basePath + '/',
-    name: 'INSIGHT — 책에서 시작하는 지적 일상',
+    name: 'INSIGHT — 세계에서 시작하는 지적 일상',
     short_name: 'INSIGHT',
-    description: '책에서 출발하는 독립적인 지식 매거진',
+    description: '실제 해외 뉴스에서 출발하는 독립적인 지식 매거진',
     lang: 'ko',
     start_url: basePath + '/',
     scope: basePath + '/',

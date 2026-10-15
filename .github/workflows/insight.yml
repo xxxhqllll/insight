@@ -48,16 +48,25 @@ jobs:
 
       - run: npm ci
 
+      - name: Verify real news source access
+        if: github.event_name == 'push' && github.event.head_commit.message == 'Prepare source-backed daily news column'
+        run: node scripts/check-news.mjs
+
       - name: Reserve daily generation
         id: reserve
-        if: (github.event_name == 'schedule' && vars.ENABLE_AUTO_GENERATION == 'true') || (github.event_name == 'workflow_dispatch' && inputs.generate)
+        if: (github.event_name == 'schedule' && vars.ENABLE_AUTO_GENERATION == 'true') || (github.event_name == 'workflow_dispatch' && inputs.generate) || (github.event_name == 'push' && github.event.head_commit.message == 'Launch source-backed daily news column [news-launch]')
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           FREE_TIER_CONFIRMED: ${{ vars.FREE_TIER_CONFIRMED }}
+          RESUME_NEWS: ${{ github.event_name == 'push' && github.event.head_commit.message == 'Launch source-backed daily news column [news-launch]' }}
         run: |
-          node scripts/generate.mjs --reserve
+          if [ "$RESUME_NEWS" = "true" ]; then
+            node scripts/news-generate.mjs --reserve --resume
+          else
+            node scripts/news-generate.mjs --reserve
+          fi
           git config user.name 'insight-bot'
           git config user.email 'insight-bot@users.noreply.github.com'
           git add data/usage.json data/status.json
@@ -65,6 +74,7 @@ jobs:
           git push origin HEAD:main
 
       - name: Generate article
+        id: generate
         if: steps.reserve.outcome == 'success'
         continue-on-error: true
         env:
@@ -72,7 +82,7 @@ jobs:
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           FREE_TIER_CONFIRMED: ${{ vars.FREE_TIER_CONFIRMED }}
           GOOGLE_BOOKS_API_KEY: ${{ secrets.GOOGLE_BOOKS_API_KEY }}
-        run: node scripts/generate.mjs --reserved
+        run: node scripts/news-generate.mjs --reserved
 
       - name: Save publication result
         if: always() && steps.reserve.outcome != 'skipped'
@@ -84,6 +94,11 @@ jobs:
             git commit -m 'Update INSIGHT publication status'
             git push origin HEAD:main
           fi
+
+      - name: Show publication outcome
+        if: always()
+        run: |
+          node -e "const s=JSON.parse(require('fs').readFileSync('data/status.json')); require('fs').appendFileSync(process.env.GITHUB_STEP_SUMMARY, '## Content status: '+s.state+'\\n'+s.message+'\\n'); if(s.state==='skipped') console.log('::warning::Article was not published. Check content status, even if website deployment succeeds.');"
 
       - run: npm test
 

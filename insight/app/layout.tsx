@@ -5,8 +5,8 @@ const basePath = process.env.BASE_PATH || '';
 const iconPath = basePath + '/icons/';
 
 export const metadata: Metadata = {
-  title: 'INSIGHT — 책에서 시작하는 지적 일상',
-  description: '하루 한 편, 익숙한 생각 너머로. 책과 공개 자료에서 출발하는 독립적인 지식 매거진.',
+  title: 'INSIGHT — 세계에서 시작하는 지적 일상',
+  description: '하루 한 편, 익숙한 생각 너머로. 실제 해외 뉴스와 공개 자료에서 출발하는 독립적인 지식 매거진.',
   applicationName: 'INSIGHT',
   manifest: basePath + '/manifest.webmanifest',
   icons: {
