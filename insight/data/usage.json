@@ -10,5 +10,8 @@
     "newsMigration": 1,
     "newsFeedFetches": 3,
     "sourceFetches": 2
+  },
+  "2026-10-16": {
+    "generationAttempts": 1
   }
 }
