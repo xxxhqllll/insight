@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   manifest: basePath + '/manifest.webmanifest',
   icons: {
     icon: [
-      { url: iconPath + 'book-philosophy-32-v2.png', sizes: '32x32', type: 'image/png' },
-      { url: iconPath + 'book-philosophy-192-v2.png', sizes: '192x192', type: 'image/png' }
+      { url: iconPath + 'newspaper-32-v3.png', sizes: '32x32', type: 'image/png' },
+      { url: iconPath + 'newspaper-192-v3.png', sizes: '192x192', type: 'image/png' }
     ],
-    apple: [{ url: iconPath + 'apple-touch-icon-book-v2.png', sizes: '180x180', type: 'image/png' }]
+    apple: [{ url: iconPath + 'apple-touch-icon-newspaper-v3.png', sizes: '180x180', type: 'image/png' }]
   },
   appleWebApp: { capable: true, title: 'INSIGHT', statusBarStyle: 'default' }
 };
