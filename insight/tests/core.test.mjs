@@ -11,3 +11,13 @@ test('no key, no attestation, unknown models, expired policy all fail closed',()
 test('source fetch blocks private IP, non-https, arbitrary hosts, credentials, Gutenberg',()=>{for(const url of ['http://mitpress.mit.edu','https://127.0.0.1/a','https://example.com','https://u:p@mitpress.mit.edu/a','https://www.gutenberg.org/ebooks/5200'])assert.throws(()=>safeURL(url));assert.equal(safeURL('https://mitpress.mit.edu/a').hostname,'mitpress.mit.edu');});
 test('robots fail conservatively for protected and wildcard paths',()=>{assert.equal(robotsAllows('User-agent: *\nDisallow: /private\nDisallow: /*?secret=', '/private/book'),false);assert.equal(robotsAllows('Disallow: /*?secret=', '/book?secret=x'),false);assert.equal(robotsAllows('Disallow: /private','/book'),true);});
 test('publication rejects short copy, title drift, broken evidence, unsupported review',()=>{const book={title:'Book',author:'Author'},sources=[{id:'s1',text:'A verified source sentence that exists.'}];const a={title:'Article',deck:'Deck',question:'Question',book,sections:Array.from({length:6},(_,i)=>({heading:'Section '+i,body:'가나다 '.repeat(110),kind:'fact',sourceIds:['s1']}))};assert.equal(validateArticle(a,book,sources),2640);assert.throws(()=>validateArticle({...a,book:{title:'Wrong',author:'Author'}},book,sources));assert.throws(()=>validateArticle({...a,sections:a.sections.map(s=>({...s,body:'short'}))},book,sources));assert.throws(()=>validateArticle({...a,sections:a.sections.map(s=>({...s,sourceIds:['fake']}))},book,sources));assert.throws(()=>validateReview({pass:true,identityMatch:true,copyrightRisk:false,unsupportedClaims:[],evidence:Array(3).fill({claim:'x',sourceId:'s1',quote:'a made up quote that is not present'})},sources));assert.throws(()=>validateReview({pass:false},sources));});
+
+test('news review accepts one grounded quote despite harmless whitespace differences',()=>{
+ const sources=[{id:'s1',text:'A verified source sentence that exists. The result has important limitations.'}];
+ const base={pass:true,identityMatch:true,copyrightRisk:false,unsupportedClaims:[],evidence:[{claim:'Verified',sourceId:'s1',quote:'A verified source sentence  that exists.'}]};
+ assert.doesNotThrow(()=>validateReview(base,sources));
+ assert.throws(()=>validateReview({...base,evidence:[]},sources));
+ assert.throws(()=>validateReview({...base,unsupportedClaims:['Unverified number']},sources));
+ assert.throws(()=>validateReview({...base,evidence:[{claim:'Unverified',sourceId:'s1',quote:'A completely invented quote'}]},sources));
+ assert.throws(()=>validateReview({...base,copyrightRisk:true},sources));
+});
