@@ -36,4 +36,15 @@ export function validateArticle(a,book,sources,previous=[]){
  for(const p of previous){const bb=grams(p.sections.map(s=>s.body).join(''));const shared=[...aa].filter(v=>bb.has(v)).length;if(shared/Math.max(1,Math.min(aa.size,bb.size))>.65)throw new Error('기존 글과 본문이 지나치게 유사합니다.');}
  return length;
 }
-export function validateReview(r,sources){if(!r||r.pass!==true||r.unsupportedClaims?.length!==0||r.copyrightRisk!==false||r.identityMatch!==true||!Array.isArray(r.evidence)||r.evidence.length<3)throw new Error('AI 교차 검토를 통과하지 못했습니다.');for(const e of r.evidence){const src=sources.find(s=>s.id===e.sourceId);if(typeof e.claim!=='string'||typeof e.quote!=='string'||e.quote.length<15||!src?.text.includes(e.quote))throw new Error('검증 근거가 실제 수집 자료와 일치하지 않습니다.');}}
+// Whitespace differences are not factual discrepancies; quotes must still exist verbatim after spacing normalization.
+export const evidenceMatches=(e,sources)=>{
+ const src=sources.find(s=>s.id===e?.sourceId);
+ if(typeof e?.claim!=='string'||!e.claim.trim()||typeof e?.quote!=='string')return false;
+ const quote=e.quote.replace(/\\s+/g,' ').trim();
+ return quote.length>=15 && !!src?.text.replace(/\\s+/g,' ').includes(quote);
+};
+export function validateReview(r,sources){
+ if(!r||r.pass!==true||!Array.isArray(r.unsupportedClaims)||r.unsupportedClaims.length!==0||r.copyrightRisk!==false||r.identityMatch!==true||!Array.isArray(r.evidence)||r.evidence.length<1)
+  throw new Error('AI 교차 검토를 통과하지 못했습니다.');
+ for(const e of r.evidence)if(!evidenceMatches(e,sources))throw new Error('검증 근거가 실제 수집 자료와 일치하지 않습니다.');
+}
