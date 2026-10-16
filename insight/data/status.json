@@ -1,10 +1,22 @@
 {
-  "state": "reserved",
+  "state": "skipped",
   "pipeline": "news-v1",
-  "lastAttempt": "2026-10-16T22:25:28.125Z",
+  "lastAttempt": "2026-10-16T22:25:35.178Z",
   "lastPublished": "2026-10-15",
   "model": "gemini-3.5-flash-lite",
-  "message": "하루 1편 뉴스 칼럼 생성을 예약했습니다.",
+  "message": "검증 근거가 실제 수집 자료와 일치하지 않습니다.",
   "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/fires-arrive-in-the-amazon-rainforest/",
-  "stage": "review"
+  "stage": "review",
+  "reviewDiagnostics": {
+    "failureCodes": [
+      "evidence_mismatch_2"
+    ],
+    "reviewPass": true,
+    "identityMatch": true,
+    "copyrightRisk": false,
+    "unsupportedClaimCount": 0,
+    "unsupportedClaims": [],
+    "evidenceCount": 2,
+    "validEvidenceCount": 1
+  }
 }
