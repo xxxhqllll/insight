@@ -39,5 +39,8 @@
     "newsFeedFetches": 3,
     "sourceFetches": 1,
     "generationCalls": 1
+  },
+  "2026-10-21": {
+    "generationAttempts": 1
   }
 }
