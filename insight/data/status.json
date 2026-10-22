@@ -1,10 +1,25 @@
 {
-  "state": "reserved",
+  "state": "skipped",
   "pipeline": "news-v1",
-  "lastAttempt": "2026-10-22T22:26:32.902Z",
+  "lastAttempt": "2026-10-22T22:26:40.737Z",
   "lastPublished": "2026-10-18",
   "model": "gemini-3.5-flash-lite",
-  "message": "하루 1편 뉴스 칼럼 생성을 예약했습니다.",
+  "message": "AI 교차 검토를 통과하지 못했습니다.",
   "sourceUrl": "https://www.nasa.gov/missions/station/i-am-artemis-allison-mjoen/",
-  "stage": "source"
+  "stage": "review",
+  "reviewDiagnostics": {
+    "failureCodes": [
+      "review_pass_false",
+      "unsupported_claims_present"
+    ],
+    "reviewPass": false,
+    "identityMatch": true,
+    "copyrightRisk": false,
+    "unsupportedClaimCount": 1,
+    "unsupportedClaims": [
+      "배경 은하는 그보다 거의 두 배 먼 약 8억 광년 거리의 은하로"
+    ],
+    "evidenceCount": 2,
+    "validEvidenceCount": 2
+  }
 }
