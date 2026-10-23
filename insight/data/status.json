@@ -1,12 +1,12 @@
 {
-  "state": "reserved",
+  "state": "skipped",
   "pipeline": "news-v1",
-  "lastAttempt": "2026-10-23T22:26:33.791Z",
+  "lastAttempt": "2026-10-23T22:26:39.268Z",
   "lastPublished": "2026-10-18",
   "model": "gemini-3.5-flash-lite",
-  "message": "하루 1편 뉴스 칼럼 생성을 예약했습니다.",
+  "message": "칼럼 분량(1117자)이 1,200~1,800자 범위를 벗어났습니다.",
   "sourceUrl": "https://www.nasa.gov/missions/station/i-am-artemis-allison-mjoen/",
-  "stage": "review",
+  "stage": "draft",
   "reviewDiagnostics": {
     "failureCodes": [
       "review_pass_false",
