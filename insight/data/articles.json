@@ -1,5 +1,103 @@
 [
   {
+    "id": "2026-10-25-news-57c0a5f2d9657bbd",
+    "date": "2026-10-25",
+    "kind": "news",
+    "title": "달 착륙을 향한 재설계와 탐사의 새로운 전개",
+    "deck": "블루 오리진과 스페이스X의 착륙선 개발 가속화와 아르테미스 계획의 변경 사항을 바탕으로 한 과학적 고찰",
+    "question": "달 탐사 계획의 변경과 기술적 재설계는 인류의 우주 진출 과정에서 어떤 의미를 가지는가?",
+    "category": "Science",
+    "minutes": 4,
+    "sample": false,
+    "source": {
+      "id": "s1",
+      "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
+      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+      "publisher": "NASA",
+      "publishedAt": "2026-10-23T22:39:39.000Z",
+      "retrievedAt": "2026-10-24T22:22:20.649Z"
+    },
+    "book": {
+      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+      "author": "NASA",
+      "originalTitle": "GLOBAL PERSPECTIVE",
+      "originalAuthor": "NASA",
+      "year": "2026-10-23"
+    },
+    "sections": [
+      {
+        "heading": "실제 원문에서 확인한 내용",
+        "body": "원문에 따르면, 민간 착륙선 개발사인 블루 오리진과 스페이스X는 2028년 유인 달 착륙을 목표로 착륙선 디자인과 운용 개념을 간소화하고 변경했다. 아르테미스 계획에 따라, 오리온 우주선과 각 제공사의 착륙선 시험 버전이 지구 저궤도에서 도킹 및 렌데뷰 능력을 시증하는 방향으로 수정되었다. 스페이스X는 저궤도에서의 추진제 이송 방식을 추진하며, 블루 오리진은 세 개의 전이 단계를 활용해 블루 문 착륙선을 달로 보내는 방식을 채택했다. 양사는 무인 시증 임무를 수행해야 하며, 안전성 검증을 거친 후 최종적으로 착륙선 준비 상태에 따라 임무 수행사가 결정된다.",
+        "kind": "fact",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "heading": "맥락과 의미",
+        "body": "필자의 해석에 따르면, 이러한 설계 변경은 과거 아폴로 프로그램의 성공 방식을 모방하여 속도와 효율성을 극대화하려는 시도로 읽힌다. 궤도 설정을 변경하고 추진제 관리 방식을 다각화한 것은 단순한 기술적 수정을 넘어, 장기적인 우주 거점 구축과 화성 탐사라는 거대한 밑그림 속에서 실행력을 높이려는 전략적 의미를 지닌다. 지상에서의 철저한 준비와 24시간 가동되는 생산 체계는 목표 달성을 위한 조직적 몰입을 방증하며, 탐사의 지평을 넓히려는 복합적인 사회적·과학적 노력의 일환으로 이해할 수 있다.",
+        "kind": "analysis",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "heading": "다른 해석과 한계",
+        "body": "필자가 보기에, 이번 계획 수정은 복잡한 궤도 역학과 고난도 기술에 의존하던 기존 구도의 위험성을 낮추려는 실용적 선택이지만, 동시에 단기적 일정 압박으로 인한 잠재적 한계나 미지의 변수를 내포할 수 있다. 원문에서 언급된 내용 외의 추가적인 독립적 검증 자료나 외부 전문가의 비판적 반론은 본문에서 확인할 수 없으므로, 이러한 설계 변경이 실제 비행 환경에서 예상치 못한 기술적 난관을 완벽히 차단할 수 있을지는 철저히 관찰과 검증을 통해서만 입증될 수 있는 과제로 남는다.",
+        "kind": "analysis",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "heading": "일상에 던지는 질문",
+        "body": "우주 탐사라는 거대한 담론은 우리의 일상과 어떻게 연결될 수 있을까? 필자는 이 과정을 보면서, 불가능해 보이는 거대한 목표를 마주했을 때 기존의 방식을 과감히 해체하고 현실에 맞게 재조정하는 유연성이 과연 우리 삶의 영역에서는 어떻게 적용될 수 있는지 질문하게 된다. 정교하게 짜인 계획이 예상치 못한 난관에 부딪혔을 때, 안전과 혁신이라는 두 가치 사이에서 균형을 잡는 태도는 비단 우주선 개발에만 국한되지 않는 보편적인 문제 제기일 것이다.",
+        "kind": "analysis",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "heading": "마지막 생각",
+        "body": "결국 달 착륙을 향한 일련의 과정은 기술적 성취 그 이상을 시사한다. 필자의 해석으로는, 제도를 재정비하고 민간과의 협업을 가속하는 모습은 인류가 미지의 영역을 개척할 때 요구되는 집요함과 적응력을 보여준다. 2028년을 향한 도약이 계획대로 안전하게 이루어질지 여부는 앞으로 수행될 무인 시증과 철저한 검증 과정을 거쳐 판가름나겠지만, 이 치열한 도전 자체는 현대 과학기술이 나아가는 방향에 대해 깊은 영감을 던져준다.",
+        "kind": "analysis",
+        "sourceIds": [
+          "s1"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "s1",
+        "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
+        "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+        "publisher": "NASA",
+        "publishedAt": "2026-10-23T22:39:39.000Z",
+        "retrievedAt": "2026-10-24T22:22:20.649Z"
+      }
+    ],
+    "disclosure": "실제 공개 뉴스 원문을 바탕으로 INSIGHT AI가 작성한 독립 칼럼입니다. 첫 섹션은 원문 기반 사실, 이후는 AI의 해석과 질문입니다. 단일 기관 발표를 바탕으로 하며 독립적인 교차 취재는 아닙니다. 원문 제공 기관은 AI 결과를 검토·승인하지 않았으며 정확성을 보증하지 않습니다.",
+    "verification": {
+      "model": "gemini-3.5-flash-lite",
+      "checkedAt": "2026-10-24T22:22:34.727Z",
+      "policy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "evidence": [
+        {
+          "claim": "민간 착륙선 개발사인 블루 오리진과 스페이스X는 2028년 유인 달 착륙을 목표로 착륙선 디자인과 운용 개념을 간소화하고 변경했다",
+          "sourceId": "s1"
+        },
+        {
+          "claim": "오리온 우주선과 각 제공사의 착륙선 시험 버전이 지구 저궤도에서 도킹 및 렌데뷰 능력을 시증하는 방향으로 수정되었다",
+          "sourceId": "s1"
+        },
+        {
+          "claim": "스페이스X는 저궤도에서의 추진제 이송 방식을 추진하며, 블루 오리진은 세 개의 전이 단계를 활용해 블루 문 착륙선을 달로 보내는 방식을 채택했다",
+          "sourceId": "s1"
+        }
+      ]
+    }
+  },
+  {
     "id": "2026-10-18-news-3b5dbc13df98572c",
     "date": "2026-10-18",
     "kind": "news",
