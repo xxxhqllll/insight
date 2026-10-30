@@ -1,10 +1,10 @@
 {
-  "state": "skipped",
+  "state": "reserved",
   "pipeline": "news-v1",
-  "lastAttempt": "2026-10-29T22:36:34.319Z",
+  "lastAttempt": "2026-10-30T22:35:44.144Z",
   "lastPublished": "2026-10-29",
   "model": "gemini-3.5-flash-lite",
-  "message": "칼럼 분량(1024자)이 1,200~1,800자 범위를 벗어났습니다.",
+  "message": "하루 1편 뉴스 칼럼 생성을 예약했습니다.",
   "sourceUrl": "https://www.nasa.gov/aeronautics/nasa-challenge-drone-entrepreneur/",
   "stage": "draft"
 }
