@@ -104,5 +104,8 @@
     "newsFeedFetches": 3,
     "sourceFetches": 2,
     "generationCalls": 2
+  },
+  "2026-11-01": {
+    "generationAttempts": 1
   }
 }
