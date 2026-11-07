@@ -1,10 +1,9 @@
 {
-  "state": "reserved",
+  "state": "published",
   "pipeline": "news-v1",
-  "lastAttempt": "2026-11-07T22:33:03.022Z",
-  "lastPublished": "2026-10-31",
+  "lastAttempt": "2026-11-07T22:33:10.313Z",
+  "lastPublished": "2026-11-08",
   "model": "gemini-3.5-flash-lite",
-  "message": "하루 1편 뉴스 칼럼 생성을 예약했습니다.",
-  "sourceUrl": "https://www.nsf.gov/news/new-dwarf-planet-candidate-discovered-nsf-doe-rubin",
-  "stage": "source"
+  "message": "원문·근거 검증을 통과한 해외 칼럼 1편을 발행했습니다.",
+  "sourceUrl": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/"
 }

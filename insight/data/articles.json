@@ -1,5 +1,99 @@
 [
   {
+    "id": "2026-11-08-news-44a6b3793253ee6a",
+    "date": "2026-11-08",
+    "kind": "news",
+    "title": "미지의 경계를 향한 도전: 새로운 우주 비행사 모집이 던지는 의미",
+    "deck": "달과 화성을 향한 인류의 거대한 여정에 동참할 차세대 탐험가 선발이 시작되었습니다.",
+    "question": "우주 탐사는 인류에게 단순한 과학적 성취를 넘어 어떤 존재론적 의미를 지니는가?",
+    "category": "Science",
+    "minutes": 4,
+    "sample": false,
+    "source": {
+      "id": "s1",
+      "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+      "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+      "publisher": "NASA",
+      "publishedAt": "2026-11-07T18:11:57.000Z",
+      "retrievedAt": "2026-11-07T22:33:04.276Z"
+    },
+    "book": {
+      "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+      "author": "NASA",
+      "originalTitle": "GLOBAL PERSPECTIVE",
+      "originalAuthor": "NASA",
+      "year": "2026-11-07"
+    },
+    "sections": [
+      {
+        "heading": "우주 비행사 모집의 사실과 요건",
+        "body": "원문에 따르면 차세대 우주 비행사 후보자 모집이 진행 중이며 지원 마감은 다가오는 12월 3일로 안내되어 있다. 최종 선발 결과는 2027년 후반에 발표될 예정이며 선발된 이들은 훈련을 거치게 된다. 지원 자격으로는 미국 시민권과 함께 공학, 생물과학, 물리과학, 컴퓨터과학 등 STEM 분야의 석사 학위가 요구되며 관련 전문 분야에서의 3년 이상 경험이 필수적이다. 또한 장기간의 우주 비행 신체 검사를 통과해야 하며 강력한 리더십과 팀워크, 의사소통 능력을 증명해야 하는 과정이 포함되어 있다.",
+        "kind": "fact",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "heading": "탐사와 확장의 역사적 맥락",
+        "body": "필자의 해석에 따르면 이번 우주 비행사 선발은 단순한 인력 채용을 넘어 인류의 활동 영역을 지구 밖으로 영구히 확장하려는 역사적 국면과 맞닿아 있다. 달 기지 건설과 화성 유인 탐사를 준비하는 과정은 과거 1960년대부터 이어져 온 탐험의 전통을 계승하는 것이다. 선발된 인원들이 수행할 임무는 지구를 넘어 달의 남극 지역 등 더욱 가혹하고 미지의 영역을 개척하는 데 초점이 맞춰져 있으며 이는 인류가 우주라는 새로운 무대에서 지속적인 존재감을 확보하는 중대한 전환점을 의미한다.",
+        "kind": "analysis",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "heading": "지원자격 제한과 거대한 도전의 한계",
+        "body": "원문에서 제시된 엄격한 자격 요건은 우주 탐사가 지닌 고도의 전문성과 위험성을 방증하지만 동시에 일반 대중과의 괴리라는 비판적 질문을 던지기도 한다. 미국 시민권과 특정 STEM 석사 학위, 수년간의 전문 경력이라는 조건은 지구 전체의 관점에서 볼 때 극히 제한된 집단에게만 기회가 주어짐을 보여준다. 이처럼 고도로 선별된 소수의 엘리트 중심 탐사가 과연 보편적인 인류의 진화와 영감을 온전히 대변할 수 있는지에 대한 구조적 한계와 질문을 이 과정 속에서 신중하게 검토해 볼 필요가 있다.",
+        "kind": "analysis",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "heading": "개인의 삶과 미지의 세계가 만나는 지점",
+        "body": "우주 비행사 지원이라는 사건은 우리에게 일상을 넘어선 거대한 가능성과 도전 정신에 대해 생각해보게 만든다. 누군가에게는 단순한 직업적 기회일 수 있으나 또 다른 이에게는 인류의 미래 역사를 함께 써 내려가는 기회가 된다. 우리가 매일 살아가는 지구라는 공간을 벗어나 더 넓은 우주를 바라보는 행위는 개인의 한계와 가능성을 재정의하는 계기를 제공한다. 과연 우리는 우리 삶의 안락함을 뒤로하고 미지의 영역으로 향하는 탐험가들의 도전으로부터 어떤 영감과 변화를 이끌어낼 수 있을 것인가.",
+        "kind": "analysis",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "heading": "우주를 향한 시선이 가져오는 마지막 생각",
+        "body": "결론적으로 이번 차세대 우주 비행사 모집 소식은 기술적 성취의 기록을 넘어 인류가 지향해야 할 미지에 대한 호기심과 용기를 다시금 일깨워준다. 달과 화성을 향하는 여정은 단순히 새로운 땅을 밟는 것을 넘어 인간이라는 존재의 지평을 넓히는 철학적 의미를 지닌다. 완벽하게 통제되지 않은 위험 속으로 뛰어드는 이들의 모습은 두려움을 넘어선 도전 정신이 무엇인지 보여준다. 앞으로 펼쳐질 우주 탐사의 역사 속에서 인류가 기술적 진보와 함께 어떤 성숙한 태도를 갖추어나갈지 차분히 지켜보아야 할 시점이다.",
+        "kind": "analysis",
+        "sourceIds": [
+          "s1"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "s1",
+        "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+        "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+        "publisher": "NASA",
+        "publishedAt": "2026-11-07T18:11:57.000Z",
+        "retrievedAt": "2026-11-07T22:33:04.276Z"
+      }
+    ],
+    "disclosure": "실제 공개 뉴스 원문을 바탕으로 INSIGHT AI가 작성한 독립 칼럼입니다. 첫 섹션은 원문 기반 사실, 이후는 AI의 해석과 질문입니다. 단일 기관 발표를 바탕으로 하며 독립적인 교차 취재는 아닙니다. 원문 제공 기관은 AI 결과를 검토·승인하지 않았으며 정확성을 보증하지 않습니다.",
+    "verification": {
+      "model": "gemini-3.5-flash-lite",
+      "checkedAt": "2026-11-07T22:33:10.313Z",
+      "policy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "evidence": [
+        {
+          "claim": "지원 마감은 12월 3일이며 최종 선발은 2027년 후반에 예정되어 있음",
+          "sourceId": "s1"
+        },
+        {
+          "claim": "미국 시민권과 STEM 분야 석사 학위, 3년 이상의 관련 전문 경험이 요구됨",
+          "sourceId": "s1"
+        }
+      ]
+    }
+  },
+  {
     "id": "2026-10-31-news-54f31a9a44470168",
     "date": "2026-10-31",
     "kind": "news",
