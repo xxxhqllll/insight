@@ -156,6 +156,9 @@
     "generationCalls": 2
   },
   "2026-11-10": {
-    "generationAttempts": 1
+    "generationAttempts": 1,
+    "newsFeedFetches": 3,
+    "sourceFetches": 1,
+    "generationCalls": 2
   }
 }
