@@ -1,5 +1,95 @@
 [
   {
+    "id": "2026-11-11-news-b5609a4ae8c29f7f",
+    "date": "2026-11-11",
+    "kind": "news",
+    "title": "지구 밖의 일상: 국제정거장 장기 체류가 남긴 기록들",
+    "deck": "국제정거장에서 장기간 임무를 수행하고 돌아온 우주비행사들의 귀환과 그들이 수행한 과학적 성과를 통해 인류의 우주 탐사 여정을 되돌아본다.",
+    "question": "우주라는 극한의 환경에서 인간은 어떤 과학적 성취를 이루어내고 있는가?",
+    "category": "Science",
+    "minutes": 3,
+    "sample": false,
+    "source": {
+      "id": "s1",
+      "url": "https://www.nasa.gov/news-release/nasa-to-welcome-expedition-74-astronauts-home-at-space-center-houston/",
+      "title": "NASA to Welcome Expedition 74 Astronauts Home at Space Center Houston",
+      "publisher": "NASA",
+      "publishedAt": "2026-11-10T18:06:33.000Z",
+      "retrievedAt": "2026-11-10T22:37:48.681Z"
+    },
+    "book": {
+      "title": "NASA to Welcome Expedition 74 Astronauts Home at Space Center Houston",
+      "author": "NASA",
+      "originalTitle": "GLOBAL PERSPECTIVE",
+      "originalAuthor": "NASA",
+      "year": "2026-11-10"
+    },
+    "sections": [
+      {
+        "heading": "우주비행사들의 귀환과 활동 내용",
+        "body": "원문에 따르면 제74차 원정대 승무원들이 장기 임무를 마치고 지구로 귀환하여 휴스턴 스페이스 센터에서 대중 행사를 가질 예정이다. 제시카 메이어, 잭 해서웨이, 크리스 윌리엄스, 소피 아데노, 세르게이 쿠드스베르치코프, 세르게이 미카예프 등은 임무 하이라이트를 공유하고 공헌자들을 위한 시상식에 참석한다. 이들은 각각 소유즈와 드래곤 우주선을 통해 발사되어 수백 일 동안 궤도를 돌며 수천 회의 지구 선회와 막대한 거리를 이동했다.",
+        "kind": "fact",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "heading": "궤도 위에서 확장된 과학적 지식의 맥락",
+        "body": "필자의 해석에 따르면 이들이 수행한 수많은 시간의 과학 연구와 기술 실증은 단순한 기록을 넘어 인류의 미래 탐사를 준비하는 핵심 과정이다. 3D 프린팅 기술 테스트, 인체 건강 연구, 암 치료제와 종자 연구 등은 지구라는 중력의 한계를 벗어난 곳에서만 얻을 수 있는 독보적인 데이터다. 생명 유지 시스템 평가와 식물 재배 실험은 향후 달과 화성 등 장기적인 우주 탐사로 나아가기 위한 필수적인 토대를 다지는 의미를 지닌다.",
+        "kind": "analysis",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "heading": "성과의 이면에 존재하는 조건과 한계",
+        "body": "다만 이러한 화려한 수치와 방대한 연구 성과 이면에는 엄격하게 통제된 우주 정거장이라는 특수한 공간적 한계가 존재한다. 26년 이상 지속된 궤도 거주는 인간이 지구 외부에 적응할 가능성을 보여주지만, 동시에 지구가 아닌 환경에서 신체적 변화와 생존을 유지해야 하는 지속적인 도전 과제를 동반한다. 또한 이 모든 활동은 고도로 조직화된 국제적 협력과 방관자적 관찰이 아닌 철저한 임무 수행의 결과물로서 단일한 시각을 넘어선 비판적 검토가 필요하다.",
+        "kind": "analysis",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "heading": "우주 탐사가 우리의 일상에 던지는 질문",
+        "body": "우주비행사들이 수행한 단백질 결정화나 줄기세포 연구, 그리고 지구와는 다른 중력 환경에서의 신체 반응 연구는 결코 하늘 위의 일로만 남지 않는다. 필자는 이러한 연구가 결국 지구에 사는 우리의 질병 치료와 환경 이해에 어떻게 기여하는지 주목한다. 우리가 매일 발을 디디고 사는 지구가 아닌, 보이지 않는 궤도 위에서 이루어지는 수많은 실험들은 인간의 몸과 기술이 어디까지 확장될 수 있는지에 대한 근본적인 질문을 우리에게 던지고 있다.",
+        "kind": "analysis",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "heading": "미래의 탐사와 남겨진 과제에 대한 생각",
+        "body": "결국 이들의 안전한 귀환과 성과 공유는 단순한 행사를 넘어 다음 단계의 탐사로 향하는 출발점이다. 아르테미스 프로그램을 비롯한 향후의 심우주 탐사는 과거의 경험을 바탕으로 더욱 거대한 도전에 직면하게 될 것이다. 필자의 시각에서 볼 때 우주를 향한 인류의 지속적인 발걸음은 미지의 영역을 개척하는 동시에, 우리가 지구라는 공동의 거주지에서 수행해야 할 과학적 책무가 무엇인지 깊이 성찰하게 만드는 거대한 거울과 같다.",
+        "kind": "analysis",
+        "sourceIds": [
+          "s1"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "s1",
+        "url": "https://www.nasa.gov/news-release/nasa-to-welcome-expedition-74-astronauts-home-at-space-center-houston/",
+        "title": "NASA to Welcome Expedition 74 Astronauts Home at Space Center Houston",
+        "publisher": "NASA",
+        "publishedAt": "2026-11-10T18:06:33.000Z",
+        "retrievedAt": "2026-11-10T22:37:48.681Z"
+      }
+    ],
+    "disclosure": "실제 공개 뉴스 원문을 바탕으로 INSIGHT AI가 작성한 독립 칼럼입니다. 첫 섹션은 원문 기반 사실, 이후는 AI의 해석과 질문입니다. 단일 기관 발표를 바탕으로 하며 독립적인 교차 취재는 아닙니다. 원문 제공 기관은 AI 결과를 검토·승인하지 않았으며 정확성을 보증하지 않습니다.",
+    "verification": {
+      "model": "gemini-3.5-flash-lite",
+      "checkedAt": "2026-11-10T22:37:55.081Z",
+      "policy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "evidence": [
+        {
+          "claim": "제74차 원정대 승무원들이 장기 임무를 마치고 지구로 귀환하여 휴스턴 스페이스 센터에서 대중 행사를 가질 예정이다.",
+          "sourceId": "s1"
+        }
+      ]
+    }
+  },
+  {
     "id": "2026-11-10-news-ef36c729bdb5bede",
     "date": "2026-11-10",
     "kind": "news",
