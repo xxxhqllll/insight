@@ -1,12 +1,12 @@
 {
   "state": "skipped",
   "pipeline": "news-v1",
-  "lastAttempt": "2026-11-12T22:42:23.587Z",
+  "lastAttempt": "2026-11-13T22:40:28.027Z",
   "lastPublished": "2026-11-12",
   "model": "gemini-3.5-flash-lite",
-  "message": "검증 근거가 실제 수집 자료와 일치하지 않습니다.",
+  "message": "무료 모델 정책 확인 기간이 만료되었습니다. 공식 요금표를 다시 확인하고 policy.json을 갱신하세요.",
   "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/water-surges-into-navajo-reservoir/",
-  "stage": "review",
+  "stage": "configuration",
   "reviewDiagnostics": {
     "failureCodes": [
       "evidence_mismatch_3"
