@@ -1,7 +1,7 @@
 {
   "state": "skipped",
   "pipeline": "news-v1",
-  "lastAttempt": "2026-11-16T01:44:07.288Z",
+  "lastAttempt": "2026-11-17T04:24:08.498Z",
   "lastPublished": "2026-11-12",
   "model": "gemini-3.5-flash-lite",
   "message": "무료 모델 정책 확인 기간이 만료되었습니다. 공식 요금표를 다시 확인하고 policy.json을 갱신하세요.",
